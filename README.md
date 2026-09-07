@@ -13,7 +13,10 @@ RunavaLauncher is a single-APK port of the desktop [RuneLite](https://runelite.n
 
 Everything is bundled. Install one APK, tap the icon, log in, play.
 
-![RunavaLauncher mining at the mining guild](docs/screenshots/gameplay.png)
+<p align="center">
+  <img src="docs/screenshots/gameplay-landscape.png" alt="RunavaLauncher in landscape" height="380">
+  <img src="docs/screenshots/gameplay-portrait.png" alt="RunavaLauncher in portrait" height="380">
+</p>
 
 ## Install
 
