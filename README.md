@@ -52,7 +52,7 @@ through RuneLite itself.
 
 ## Known limitations
 
-* **Software-rendered.** RuneLite's GPU plugin (`librlawt.so`) needs glibc + X11 + GLX symbols that Android doesn't have. The CPU renderer is what runs, so the game's own render thread is the frame rate ceiling. Fine on a modern phone, but not desktop GPU-plugin numbers.
+* **Software renderer by default; GPU rendering is opt-in.** The default install runs RuneLite's CPU renderer, so the game's own render thread is the frame rate ceiling - fine on a modern phone. RuneLite's GPU plugin also runs, through a custom Android `rlawt` backend (Mesa → zink → Vulkan), with no glibc, X11 or GLX involved; it is currently gated behind a marker file rather than a setting, so it is not yet the default.
 * **Logging in needs one copy and paste.** Desktop launchers catch the final redirect with a local server on port 80; an Android app may not bind a privileged port, and a browser never hands an `http://` address to an app.
 * **Portrait is tight.** RuneLite's UI is built for landscape; in portrait everything reflows to fit, but the sidebar is necessarily narrower.
 
